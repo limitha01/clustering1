@@ -34,7 +34,8 @@
       margin: 10px 0;
       color: #555;
     }
-    input[type="text"] {
+    input[type="text"],
+    input[type="date"] {
       width: 100%;
       padding: 8px;
       margin-top: 5px;
@@ -62,10 +63,11 @@
     <h1>Welcome to Netflix Clustering</h1>
     <p>Enter the necessary details to find out which cluster your input belongs to!</p>
     <form action="/predict" method="post">
-      <label>Feature 1: <input type="text" name="feature1" required></label>
-      <label>Feature 2: <input type="text" name="feature2" required></label>
-      <label>Feature 3: <input type="text" name="feature3" required></label>
-      <label>Feature 4: <input type="text" name="feature4" required></label>
+      <label>Duration (Minutes): <input type="text" name="duration_minutes" required></label>
+      <label>Duration (Seasons): <input type="text" name="duration_seasons" required></label>
+      <label>Show ID: <input type="text" name="show_id" required></label>
+      <label>Listed In (Category): <input type="text" name="listed_in" required></label>
+      <label>Date Added: <input type="date" name="date_added" required></label>
       <button type="submit">Predict using K-Means</button>
     </form>
   </div>
