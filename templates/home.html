@@ -34,7 +34,8 @@
       margin: 10px 0;
       color: #555;
     }
-    input[type="text"] {
+    input[type="text"],
+    input[type="date"] {
       width: 100%;
       padding: 8px;
       margin-top: 5px;
@@ -66,6 +67,7 @@
       <label>Duration (Seasons): <input type="text" name="feature2" required></label>
       <label>Show ID: <input type="text" name="feature3" required></label>
       <label>Listed In (Category): <input type="text" name="feature4" required></label>
+      <label>Date Added: <input type="date" name="date_added" required></label>
       <button type="submit">Predict using K-Means</button>
     </form>
   </div>
